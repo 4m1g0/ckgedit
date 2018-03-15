@@ -84,6 +84,7 @@ window.onload = function()
      document.getElementById("btn__create_folder").disabled = true;    
      document.getElementById("create_folder").innerHTML = "";
    }
+  else document.getElementById("create_folder").style.display='block';
 
    if(CreateDwikiFolder == 'n') {
         document.getElementById('create_folder').style.display = 'none';  
@@ -338,7 +339,7 @@ function onSubmitFn() {
             <iframe name="frmResourcesList" class="resourceslist" src="frmresourceslist.html"  frameborder="0" id="frmResourcesList"  width="758"   height="400"  scrolling="auto"></iframe>
             </div>
              <div id="bottom_matter">   
-                <div id="create_folder"  class="createfolder">
+                <div id="create_folder"  class="createfolder" style="display:none">
                     <table  class="fullHeight" cellSpacing="0" cellPadding="0" width="100%" border="0">
                         <tr>
                             <td>
